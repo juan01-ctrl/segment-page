@@ -1,0 +1,144 @@
+.sec-4{
+background-color: #fff;
+img{
+    box-shadow: none;
+}
+
+    .swiper-button-next, .swiper-button-prev{
+      color:rgba($color: #4460c7, $alpha: .5);
+    }
+
+
+.title-sec4{
+font-size: 30px;
+color: $navTextColor;
+text-align: left;
+span{
+    color: $secondColor;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+        color: $secondColorHover;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $secondColor;
+        width: 0;
+        height: 1px;
+        transition: width .6s ease;
+    }
+    &:hover::before{
+        width: 100%;
+    }
+}
+}
+}
+
+.sec-slide{
+    padding: 2rem;
+    background-color: #193FC2 !important;
+    border-radius:30px 30px 60px 30px ;
+    color: #fff;
+    .bloqt{
+       margin: 0;
+       padding: 1rem 0;
+       font-size: 20px;
+       font-weight: 500;
+    }
+    .span-name{
+        font-size: 16px;
+        padding: 1rem 0;
+    }
+    .span-job{
+        font-size: 13px;
+    }
+}
+.sec-slide-second{
+    background-color: #E9194B !important;
+}
+
+.swiper-container-3{
+    border-radius: 30px;
+}
+
+.sec-slide-1{
+    padding:1rem 2rem;
+    .percent{
+        font-size: 66px;
+        font-weight: 900;
+        color: #193FC2;
+    }
+    p{
+        font-size: 17px;
+        color: #193FC2;
+        line-height: 1.6;
+        font-weight: 700;
+    }
+    a{
+        float: right;
+        color: $navTextColor;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        padding-bottom:.2rem ;
+        span{
+            margin-right: .5rem;
+            position: relative;
+        }
+        i{
+            font-size: 13px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $navTextColor;
+            width: 0;
+            height: 1px;
+            transition: width .6s ease;
+        }
+        &:hover::before{
+            width: 100%;
+        }
+    }
+}
+
+.sec-slide-2{
+    .percent,p{
+
+        color: #E9194B;
+    }
+}
+
+.get-started{
+    margin-top: 4rem;
+    .get-start{
+        font-size: 30px;
+        color: $navTextColor;
+        margin: 2rem 0 .6rem ;
+    }
+    .button-form{
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        transition: color .5s ease, border-color .5s ease, background-color .5s ease;
+        &:hover{
+            background-color:#fff ;
+            color: $secondColor;
+            border-color: $secondColor;
+        }
+    }
+    .btn-account{
+        background-color: transparent;
+        color: $navTextColor;
+        border: 1px solid transparent;
+        transition: color .5s ease, border-color .5s ease;
+        &:hover{
+            color: $secondColor;
+            border-color:$secondColor ;
+        }
+    }
+}

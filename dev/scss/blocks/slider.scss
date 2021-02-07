@@ -1,0 +1,80 @@
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+       box-shadow:0 1.5rem 3rem rgba(38,46,79,0.04);
+       
+      }
+
+     .title-swiper-1{
+        font-size: 20px;
+        color: $secondTextColor;
+    }
+  
+      .swiper-slide {
+          padding-bottom: 3rem;
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+    .slide{
+        text-align: left;
+
+        p{
+            font-size: 19px;
+            color: $secondTextColor;
+            line-height: 1.6;
+        }
+
+        h3{
+            color: $navTextColor;
+            font-size: 30px;
+        }
+
+        &-link{
+            color: $secondColor;
+            position: relative;
+            padding: .2rem 0;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $secondColor;
+                width: 0;
+                height: 1px;
+                transition: width .5s ease-in-out;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+        }
+    }
+
+   .swiper-pagination-bullet-active{
+      background-color: $signBtnColor !important;
+   }
+
+ 
+   .swiper-container-1 {
+    width: 100%;
+    height: 100%;
+   
+  }

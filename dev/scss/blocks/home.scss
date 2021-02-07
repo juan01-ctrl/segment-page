@@ -1,0 +1,131 @@
+.section-1{
+    padding-top: 7rem;
+    background-color:$firstColor ;
+    min-height: 100vh;
+  
+}
+
+
+
+.main-title{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.text-home{
+    color: $firstTextColor;
+}
+
+.img-home{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 270px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .input-form{
+        font-size: 17px;
+        color:$secondColor;
+        border: 1px solid $secondColor;
+        background-color: #00000080;
+        margin-bottom: .7rem;
+        transition: background-color .3s ease;
+        &:focus{
+            background-color: #000000;
+        }
+    }
+    
+}
+.create-account{
+    text-decoration: none;
+    color: $secondColor;
+    font-size:17px ;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: block;
+}
+
+::-webkit-input-placeholder{
+    color:$secondColor;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-companies{
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+.auto-slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    img{
+        width: 42%;
+    }
+    svg{
+        fill: #fff;
+        width: 45%;
+        height: auto;
+    }
+}
+
+
+.title-data{
+    font-size: 33px;
+}
+.card{
+    border:1px solid #6152bd;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    padding: .4rem;
+    margin-bottom: 1rem;
+    &-title{
+        margin-left: .3rem;
+        margin-bottom: .5rem;
+        font-size: 20px;
+        color: $titleOtherColor;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    &:nth-child(2){
+        border-color: #32acc0;
+        .card-title{
+            color: #32acc0;
+        }
+    }
+    &:nth-child(3){
+        border-color: #52bd95;
+        .card-title{
+            color: #52bd95;
+        }
+    }
+}
+
+
+.button-form{
+    cursor: pointer;
+    background-color: $secondColor;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.input-form, .button-form{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline-style: none;
+    border-radius: 4px ;
+}

@@ -1,0 +1,37 @@
+.contact{
+    background-color: $contact-color;
+    .logo{
+        display: block;
+        margin: 0 auto;
+    }
+    .form{
+        padding: 2rem 0 0;
+        .input-form{
+            background-color: $colorContactInput;
+            border-color: transparent ;
+            transition: border-color .3s ease;
+            &:focus{
+                border-color: $secondColor ;
+            }
+        }
+    }
+}
+
+.create-account{
+    display: inline-block;
+    position: relative;
+    padding-bottom: .2rem;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $secondColor;
+        width: 0;
+        height: 1px;
+        transition: width .6s ease;
+    }
+    &:hover::before{
+        width: 100%;
+    }
+}

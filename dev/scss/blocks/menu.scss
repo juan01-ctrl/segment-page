@@ -1,0 +1,154 @@
+.header{
+    background-color: $firstColor;
+    width: 100%;
+    position: fixed;
+    z-index: 700;
+    transition: background-color .4s ease;
+
+    // height: 100vh;
+    &.active{
+        background-color: rgb(255, 255, 255);
+
+        .nav{
+            transform: translateY(0);
+        }
+        .hamburger{
+            .line{
+            background-color: $navTextColor;
+           
+            }
+            .line-1{
+                top: 9px;
+                transform: rotate(135deg);
+              }
+              
+              .line-2 {
+                opacity: 0;
+                transform: translateX(-20px);
+              }
+              
+              .line-3{
+                  top: 9px;
+                transform: rotate(-135deg);
+              }
+
+        }
+    }
+
+
+&-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 4rem;
+}
+}
+.mobile-menu{
+    align-items: center;
+    width: 100%;
+    z-index: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        opacity: .9;
+    }
+}
+
+.nav{
+    transform: translateY(-200%);
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    transition: transform .3s ease;
+
+    
+    &-item{
+        padding: 1rem 0;
+        font-size: 24px;
+        font-weight: 600;
+        color: $navTextColor;
+        transition: color .3s ease;
+        i{
+            float: right;
+            font-size: 17px;
+        }
+        &:hover{
+            color: $secondColor;
+        }
+    }
+    .buttons-nav{
+        padding-top: 3rem;
+        width: 100%;
+        
+        .btn-sign,.btn-demo{
+           padding: 1rem;
+           border-radius: 5px;
+           font-size: 16px;
+           font-weight: 500;
+           transition: color .3s ease, background-color .3s ease;
+           width: 49%;
+        }
+        .btn-sign{
+            background-color: transparent;
+            color: $signBtnColor;
+            border: 2px solid $signBtnColor;
+            &:hover{
+                background-color:$signBtnColor ;
+                color:#fff;
+            }
+        }
+        .btn-demo{
+            background-color: $secondColor;
+            color: #fff;
+            border: 2px solid $secondColor;
+            &:hover{
+                background-color:transparent ;
+                color: $secondColor;
+            }
+        }
+    }
+}
+
+.hamburger{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    width: 25px;
+    height: 18px;
+    &:hover .line{
+        background-color: $secondColor;
+    }
+}
+.line{
+    outline-style: none;
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    position: absolute;
+    transition:  background-color .2s ease, transform .55s ease-in-out,opacity .5s ease-in-out ;
+}
+
+.line-1{
+top:0;
+}
+.line-2{
+    top:9px;
+}
+.line-3{
+    top:18px;
+}
