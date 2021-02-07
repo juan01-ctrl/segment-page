@@ -2,11 +2,40 @@
     background-color: $colorFooter;
     .footer-info{
        text-align: center;
-     a{
+     a, span{
      color: $firstTextColor;
      font-size: 13px;
-     padding: 1rem;
+     margin: 1rem;
+    }
+    a{
+        padding-bottom: .3rem;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $firstTextColor;
+            width: 0;
+            height: 1px;
+            transition: width .6s ease;
+        }
+        &:hover::before{
+            width: 100%;
+        }
     }
 }
-        
+.redes{
+text-align: center;
+margin-top: 1rem;
+    .fab{
+        color: rgb(131, 123, 123);
+        font-size: 25px;
+        padding: 1rem .5rem;
+        transition: color .3s ease;
+        &:hover{
+            color:#fff;
+        }
+    }
+}
 }

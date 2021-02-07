@@ -121,16 +121,6 @@ span{
         color: $navTextColor;
         margin: 2rem 0 .6rem ;
     }
-    .button-form{
-        margin-bottom: 1rem;
-        border: 1px solid transparent;
-        transition: color .5s ease, border-color .5s ease, background-color .5s ease;
-        &:hover{
-            background-color:#fff ;
-            color: $secondColor;
-            border-color: $secondColor;
-        }
-    }
     .btn-account{
         background-color: transparent;
         color: $navTextColor;
@@ -140,5 +130,15 @@ span{
             color: $secondColor;
             border-color:$secondColor ;
         }
+    }
+}
+.button-form{
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    transition: color .5s ease, border-color .5s ease, background-color .5s ease;
+    &:hover{
+        background-color:transparent;
+        color: $secondColor;
+        border-color: $secondColor;
     }
 }
