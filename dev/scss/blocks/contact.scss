@@ -6,6 +6,9 @@
     }
     .form{
         padding: 2rem 0 0;
+        ::-webkit-input-placeholder{
+            color:$firstTextColor;
+        }
         .input-form{
             background-color: $colorContactInput;
             border-color: transparent ;
