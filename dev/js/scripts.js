@@ -14,3 +14,12 @@ hamburger.addEventListener('click', ()=>{
     }
 
 })
+
+window.addEventListener('load',()=>{
+    const preloader = document.querySelector('.section-loader')
+  setTimeout(()=>{
+      preloader.classList.add('finish')
+},1300)
+
+  
+})
