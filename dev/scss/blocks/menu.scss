@@ -2,7 +2,8 @@
     img{
         box-shadow: none;
     }
-    background-color: $firstColor;
+    background-color: $firstAlphaColor;
+    backdrop-filter:saturate(180%)  blur(20px) ;
     width: 100%;
     position: fixed;
     z-index: 700;
