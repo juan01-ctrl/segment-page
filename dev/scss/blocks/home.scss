@@ -92,6 +92,10 @@
     text-align: center;
     padding: .4rem;
     margin-bottom: 1rem;
+    transition: opacity .3s ease;
+    &:hover{
+        opacity: .5;
+    }
     &-title{
         margin-left: .3rem;
         margin-bottom: .5rem;
