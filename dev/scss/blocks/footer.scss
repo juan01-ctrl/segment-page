@@ -1,11 +1,13 @@
 .footer{
     background-color: $colorFooter;
     .footer-info{
-       text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
      a, span{
      color: $firstTextColor;
-     font-size: 13px;
-     margin: 1rem;
+     font-size: 12px;
     }
     a{
         padding-bottom: .3rem;
