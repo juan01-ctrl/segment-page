@@ -2,7 +2,9 @@
     padding-top: 7rem;
     background-color:$firstColor ;
     min-height: 100vh;
-  
+  p{
+      font-size: 18px;
+  }
 }
 
 
@@ -100,19 +102,24 @@
         font-size: 16px;
         line-height: 1.4;
     }
-    &:nth-child(2){
+  
+    }
+    
+    .card-1{
+        opacity: .9;
         border-color: #32acc0;
         .card-title{
             color: #32acc0;
         }
     }
-    &:nth-child(3){
-        border-color: #52bd95;
-        .card-title{
-            color: #52bd95;
+        .card-2{
+            opacity: .7;
+            border-color: #52bd95;
+            .card-title{
+                color: #52bd95;
+            }
         }
-    }
-}
+
 
 
 .button-form{

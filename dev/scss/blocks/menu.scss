@@ -4,7 +4,7 @@
     }
     background-color: $firstColor;
     width: 100%;
-    position: fixed;
+    position: sticky;
     z-index: 700;
     transition: background-color .4s ease;
 

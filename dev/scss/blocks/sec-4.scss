@@ -122,6 +122,9 @@ span{
         margin: 2rem 0 .6rem ;
     }
     .btn-account{
+        display: block;
+        text-align:center ;
+        width: 100%;
         background-color: transparent;
         color: $navTextColor;
         border: 1px solid transparent;

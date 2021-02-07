@@ -16,7 +16,7 @@
         <div class="header-container">
             <div class="mobile-menu">
                 <div class="logo">
-                    <img class="logo-img" src="./assets/icons/logo.svg" alt="logo">
+                    <a href="#home"><img class="logo-img" src="./assets/icons/logo.svg" alt="logo"></a>
                 </div>
                 <a class="hamburger" id="hamburger" href="#">
                     <div class="line line-1"></div>
@@ -38,7 +38,7 @@
         </div>
     </header>
     <main>
-        <section class="section-1 sec">
+        <section id="home" class="section-1 sec">
             <section class="sec-container">
                 <img class="img-home" src='./assets/icons/img-home.svg' alt="">
                 <h1 class="main-title">The leading Customer Data Platform</h1>
@@ -50,7 +50,7 @@
                         pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                     <button type="submit" class="button-form">Get a demo</button>
                 </form>
-                <a href="#" class="create-account">Create a free account <img src="./assets/icons/arrow.svg" alt=""></a>
+                <a href="https://app.segment.com/signup/" target="_BLANK" class="create-account">Create a free account <img src="./assets/icons/arrow.svg" alt=""></a>
             </section>
             <section class="sec-container">
                 <p class="text-companies">Join the 20,000+ companies using the Segment platform</p>
@@ -67,28 +67,29 @@
                 <p>Segment collects user events from your web & mobile apps and provides a complete data toolkit to
                     every team in your company.</p>
                 <div class="card-container">
-                    <article class="card">
-                        <a href="#">
+                    <a href="#sec-2">
+                        <article class="card">
                             <h3 class="card-title">Marketing <img src="./assets/icons/arrow-down.svg" alt=""></h3>
-                        </a>
                         <p>Single view of the customer.<br />Realtime adiences.</p>
                     </article>
-                    <article class="card">
-                        <a href="#">
+                </a>
+                <a href="#sec-product">
+                    <article class="card card-1">
                             <h3 class="card-title">Product <img src="./assets/icons/arrow-down.svg" alt=""></h3>
-                        </a>
+                       
                         <p>Get data right.<br />Understand your customer.</p>
                     </article>
-                    <article class="card">
-                        <a href="#">
+                </a>
+                <a href="#sec-engineering">
+                    <article class="card card-2">
                             <h3 class="card-title">Engineering <img src="./assets/icons/arrow-down.svg" alt=""></h3>
-                        </a>
                         <p>One API. Cleaner code.<br />Best-in-class SDKs.</p>
                     </article>
+                </a>
                 </div>
             </section>
         </section>
-        <section class="section-2 sec">
+        <section id="sec-2" class="section-2 sec">
             <div class="swiper-container">
                 <h2 class="title-swiper-1">Segment for Marketing Teams</h2>
                 <div class="swiper-wrapper">
@@ -97,7 +98,7 @@
                             <img src="./assets/icons/img__card_persona_traits.svg" alt="">
                             <h3>Single view of the customer</h3>
                             <p>Unify your customer’s touch points across all platforms and channels.</p>
-                            <a class="slide-link" href="#">Explore Segment for Marketing <img
+                            <a class="slide-link" href="https://segment.com/marketing/">Explore Segment for Marketing <img
                                     src="./assets/icons/arrow.svg" alt=""></a>
                         </div>
                     </div>
@@ -107,7 +108,7 @@
                             <h3>Real-time Audiences</h3>
                             <p>Target the right customer with the right message at the right time. Build audiences and
                                 create realtime campaigns, without relying on other teams.</p>
-                            <a class="slide-link" href="#">Explore Personas Product<img src="./assets/icons/arrow.svg"
+                            <a class="slide-link" href="https://segment.com/product/personas/">Explore Personas Product<img src="./assets/icons/arrow.svg"
                                     alt=""></a>
                         </div>
                     </div>
@@ -116,7 +117,7 @@
                             <img src="./assets/img/img__card_persona_destinations.png" alt="">
                             <h3>Best in-class tools</h3>
                             <p>Activate audiences in 300+ marketing tools, in realtime.</p>
-                            <a class="slide-link" href="#">Explore Connections Product<img
+                            <a class="slide-link" href="https://segment.com/product/connections/">Explore Connections Product<img
                                     src="./assets/icons/arrow.svg" alt=""></a>
                         </div>
 
@@ -125,7 +126,7 @@
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-container">
+                <div id="sec-product" class="swiper-container">
                     <h2 class="title-swiper-1">Segment for Product Teams</h2>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -134,7 +135,7 @@
                                 <h3>Launch with the best stack</h3>
                                 <p>Enable the best product analytics, A/B testing, and data warehouse tools with the flip of a
                                     switch.</p>
-                                <a class="slide-link" href="#">Explore Segment for Product<img src="./assets/icons/arrow.svg" alt=""></a>
+                                <a class="slide-link" href="https://segment.com/product/">Explore Segment for Product<img src="./assets/icons/arrow.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -142,7 +143,7 @@
                                 <img src="./assets/icons/img__card-protocols-table.svg" alt="">
                                 <h3>Explore Protocols Product</h3>
                                 <p>Align your marketing, engineering, and analytics teams with a shared data dictionary.</p>
-                                <a class="slide-link" href="#">Explore Segment for Marketing <img src="./assets/icons/arrow.svg" alt=""></a>
+                                <a class="slide-link" href="https://segment.com/product/protocols/">Explore Protocols Product<img src="./assets/icons/arrow.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -151,7 +152,7 @@
                                 <h3>Build privacy-first</h3>
                                 <p>Automatically detect and classify PII in real-time. Accelerate compliance with GDPR, CCPA,
                                     and more.</p>
-                                <a class="slide-link" href="#">Explore Privacy Product<img src="./assets/icons/arrow.svg" alt=""></a>
+                                <a class="slide-link" href="https://segment.com/product/privacy-portal/">Explore Privacy Product<img src="./assets/icons/arrow.svg" alt=""></a>
                             </div>
     
                         </div>
@@ -160,7 +161,7 @@
                         <div class="swiper-pagination"></div>
                     </div>
         </section>
-        <section class="section-3 sec">
+        <section class="section-3 sec" id="sec-engineering">
             <div class="swiper-container">
                 <h2 class="title-swiper">Segment for Engineering Teams</h2>
                 <div class="swiper-wrapper">
@@ -259,7 +260,7 @@
                  <h3 class="get-start">Getting started is easy</h3>
                  <p>Start connecting your data with Segment.</p>
                  <button class="button-form">Get a demo</button>
-                 <button  class="button-form btn-account">Create a free account <i class="fas fa-chevron-right"></i></button>
+                 <a href="https://app.segment.com/signup/" target="_BLANK" class="button-form btn-account">Create a free account <i class="fas fa-chevron-right"></i></a>
                  <img src="./assets/icons/img__call-to-action.svg" alt="">
              </div>
         </section>
@@ -271,7 +272,7 @@
                     pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                 <button type="submit" class="button-form">Get a demo</button>
             </form>
-            <a href="#" class="create-account">Create a free account <img src="./assets/icons/arrow.svg" alt=""></a>
+            <a href="https://app.segment.com/signup/" target="_BLANK" class="create-account">Create a free account <img src="./assets/icons/arrow.svg" alt=""></a>
         </section>
 
     </main>
