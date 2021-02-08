@@ -1,0 +1,94 @@
+//MIXIN MEDIAQUERYS
+
+@mixin media-tablet{
+    @media screen and(min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-desktop{
+    @media screen and(min-width: 1024px ){
+        @content;
+    }
+}
+
+//MEDIAQUERYS
+
+@include media-tablet {
+.form{
+    flex-direction: row;
+    align-items: center;
+    .button-form, .input-form{
+        margin: 0;
+    }
+    .input-form{
+        border-radius: 8px 0 0 9px;
+        width: 50%;
+    }
+    .button-form{
+        border-radius: 0 8px 8px 0;
+        width: 20%;
+    }
+}
+.get-started{
+    display: flex;
+    justify-content: space-around;
+    .get-1{
+        width: 50%;
+        max-width: 50%;
+    }
+    .get-2{
+        max-width: 50%;
+    }
+}
+
+.buttons-start{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 466px;
+    padding-bottom: 3rem;
+  button, a{
+      margin-right: 1rem;
+  }
+   
+  button{
+      width: 40%;
+  }
+}
+.contact{
+    .form{
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        .buttons-form{
+            display: flex;
+            width: 100%;
+           flex-direction: row;
+           align-items: center; 
+           justify-content: center;
+           }
+           
+    }
+}
+
+}
+
+@include media-desktop {
+    
+        
+.footer{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .footer &-info{
+        width: 50%;
+    }
+    .redes{
+        width: 20%;
+        margin: 0;
+    }
+
+}
+
+}
